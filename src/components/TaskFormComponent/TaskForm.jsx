@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState,} from 'react';
+import "../TaskFormComponent/TaskForm.css"
 
 const TaskForm = ({ onAddTask }) => {
 
@@ -19,9 +20,9 @@ const TaskForm = ({ onAddTask }) => {
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={newTask} onChange={handleInputChange} />
-            <button type="submit">Agregar Tarea</button>
+        <form onSubmit={handleSubmit} className='task-form'>
+            <input type="text" value={newTask} onChange={handleInputChange} className='input-lista' />
+            <button type="submit" className='btn-agregar'>Agregar Tarea</button>
         </form>
     );
 }
