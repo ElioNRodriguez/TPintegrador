@@ -1,0 +1,36 @@
+.task-form{
+    display: flex;   
+    width: 650px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+.input-lista{
+    width: 450px;
+    border-radius: 15px;
+    border: solid 1px;
+    outline: rgb(45, 136, 24);
+    padding: 0 10px;
+    font-size: 18px;
+
+}
+
+.input-lista:focus{
+    border-color: rgb(45, 136, 24);
+}
+
+.btn-agregar{
+    border: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+}
+.btn-agregar:hover{
+    background: #dc3545;
+    color: white;
+    border-radius: 13px;
+    text-align: end;
+    transition: 0.4s;
+}
+
