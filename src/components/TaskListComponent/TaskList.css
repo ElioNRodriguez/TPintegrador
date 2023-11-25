@@ -1,0 +1,8 @@
+.tasklist-container{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}

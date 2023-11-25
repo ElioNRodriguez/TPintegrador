@@ -1,0 +1,20 @@
+.List-container{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 52;
+    min-height: 500px;
+    background-color: rgba(109, 105, 105, 0.656);
+    font-size: 30px;
+    padding-bottom: 30px;
+    
+  
+}
+
+.h1-container{
+ color: rgb(255, 255, 255);
+}

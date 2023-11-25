@@ -3,6 +3,7 @@ import TaskForm from '../TaskFormComponent/TaskForm';
 import TaskList from '../TaskListComponent/TaskList';
 import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect } from 'react';
+import "../TaskListContainerComponent/TaskListContainer.css"
 
 const TaskListContainer = () => {
     //usa el local storage como estado inicial de tareas guardadas
@@ -44,8 +45,8 @@ const TaskListContainer = () => {
 
   
     return (
-      <div>
-        <h1>Tareas</h1>
+      <div className='List-container'>
+        <h1 className='h1-container'>Tareas</h1>
         <TaskForm onAddTask={addTask} />
         <TaskList tasks={tasks} onCompleteTask={completeTask} onDeleteTask={deleteTask} onEditTask={editTask} />
       </div>
