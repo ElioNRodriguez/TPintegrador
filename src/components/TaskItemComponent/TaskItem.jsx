@@ -45,7 +45,7 @@ const TaskItem = ({ task, onCompleteTask, onDeleteTask, onEditTask }) => {
           />
         ) : (
           <span
-            style={{ textDecoration: completed ? "line-through" : "none" }}
+            style={{ textDecoration: completed ? "line-through red" : "none" }}
             className="span-line"
           >
             {name}
