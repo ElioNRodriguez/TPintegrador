@@ -1,18 +1,20 @@
 .task-form{
     display: flex;   
-    width: 650px;
+    width: 90%;
+    max-width: 650px;
     height: 40px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .input-lista{
-    width: 450px;
+    width: 60%;
     border-radius: 15px;
-    border: solid 1px;
-    outline: rgb(45, 136, 24);
+    border: solid 1px rgb(255, 255, 255);
+    font-family: 'Lucida Sans',sans-serif;
+    outline: none; /*se usa para que no se vea el borde al hacer click*/
     padding: 0 10px;
     font-size: 18px;
-
 }
 
 .input-lista:focus{
@@ -20,17 +22,37 @@
 }
 
 .btn-agregar{
+    width: 30%;
     border: none;
     border-radius: 15px;
     padding: 0 10px;
     font-size: 17px;
     background-color: rgb(255, 255, 255);
+    font-weight: 400px;
 }
+
 .btn-agregar:hover{
-    background: #dc3545;
+    background: rgb(37, 182, 57);
     color: white;
     border-radius: 13px;
-    text-align: end;
+    text-align: center;
     transition: 0.4s;
 }
 
+/* Cuando la pantalla tiene 600px o menos, cambia el tamaño de los elementos */
+@media (max-width: 600px) {
+.task-form {
+    width: 90%;
+    font-size: 16px;
+    
+}
+
+.input-lista {
+    width: 70%;
+    font-size: 16px;
+}
+
+.btn-agregar {
+    width: 40%; 
+}
+}
