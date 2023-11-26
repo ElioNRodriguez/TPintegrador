@@ -3,18 +3,37 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 800px;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto;
     align-items: center;
-    margin-top: 52;
     min-height: 500px;
     background-color: rgba(109, 105, 105, 0.656);
+    border: 3px solid rgb(255, 255, 255);
     font-size: 30px;
-    padding-bottom: 30px;
-    
-  
 }
 
 .h1-container{
- color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cuando la pantalla tiene 600px o menos, cambia el tamaño de los elementos */
+@media (max-width: 600px) {
+.List-container {
+    width: 100%; 
+    margin: 40px auto;
+    font-size: 18px;
+}
+
+.h1-container {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 }

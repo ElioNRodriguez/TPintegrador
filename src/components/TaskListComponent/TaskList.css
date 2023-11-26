@@ -1,8 +1,11 @@
 .tasklist-container{
-    width: 650px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    margin-top: 3px;
+}
 
-
+@media (max-width: 600px) {
+.tasklist-container {
+    margin-top: 10px; 
+}
 }

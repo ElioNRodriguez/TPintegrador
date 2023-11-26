@@ -3,6 +3,14 @@
     justify-content: space-between;
     height: 65px;
     align-items: center;
+    width: 670px;
+    font-family: 'Lucida Sans',sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    border-radius: 15px;
 }
 
 
@@ -20,14 +28,23 @@
     width: 140px;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .btn-tareas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px; 
+    height:43px;
     border-radius: 50%;
-    padding: 7px;
-    font-size: 20px;
+    padding: 0;
+    font-size: 25px;
     border: none;
-    margin-top: 3px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(22, 104, 244);
+    transition: 0.3s;
 }
 
 .btn-completar{
@@ -61,17 +78,59 @@
 .btn-guardar:hover{
     background-color: rgb(29, 101, 51);
     transition: 0.3s;
+
 }
 
- .input-edit{
-    width: 450px;
-    height: 40px;
+.input-edit{
+    width: 300px;
+    height: 30px;
     background: none;
-    font-size: 25px;
+    font-size: 20px;
     outline: black;
     color: white;
     font-weight: bold;
     border-radius: 15px;
     padding-left: 5px;
 }
- 
+
+@media (max-width: 600px) {
+.input-edit {
+    width: 300px; 
+    height: 30px;
+    font-size: 20px;
+}
+}
+
+@media (max-width: 600px) {
+.item-container {
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        font-size: 20px;
+
+}
+
+@media (max-width: 600px) {
+.btn-tareas {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+}
+
+
+@media (max-width: 400px) {
+.input-edit {
+    width: 200px; 
+    font-size: 16px;
+}
+}
+
+@media (max-width: 400px) {
+.btn-tareas {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+}
+}
+}
