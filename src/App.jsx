@@ -1,12 +1,13 @@
-import { useState } from 'react';
 import './App.css';
 import TaskListContainer from './components/TaskListContainerComponent/TaskListContainer'
+import { Toaster } from 'react-hot-toast';
 
 function App() {
-  
+
   return (
     <>
-        <TaskListContainer></TaskListContainer>
+      <TaskListContainer></TaskListContainer>
+      <Toaster position="top-right"></Toaster>
     </>
   )
 }
